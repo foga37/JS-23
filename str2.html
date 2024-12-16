@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 10</title>
+    <style>
+        .one{
+            color: blue;
+        }
+        .two{
+            background-color: brown;
+        }
+        .thre{
+            font-size: 30px;
+        }
+        .four{
+            background-color: chocolate;
+        }
+        .par1{
+            color: deeppink;
+            font-weight: 400;
+        }
+    </style>
+</head>
+<body>
+    <div id="conteiner">
+        <div id="one" class="one">one</div>
+        <div id="two" class="two">two</div>
+        <div id="thre" class="thre">thre</div>
+        <div id="four" class="four">four</div>
+    </div>
+    <p id="par">
+        Lorem, ipsum dolor.
+        <p class="par1">Lorem.</p>
+    </p>
+    
+
+    <script>
+        console.log('10. Зміна HTML-структури: Створіть сторінку з деревом DOM-структури. Використовуючи JavaScript, змініть HTML-структуру шляхом додавання нових елементів, переміщення або видалення існуючих елементів.');
+        const add1 = document.getElementById('conteiner');
+        const ad1 = document.createElement('div');
+        ad1.textContent = 'add create';
+        ad1.style.backgroundColor = 'gray';
+        add1.appendChild(ad1);
+        const two = document.getElementById('two');
+        two.remove()
+        add1.appendChild(one);
+        add1.appendChild(four)
+        const del = document.getElementById('par');
+        del.remove();
+        console.log(add1, ad1, two, del);
+        
+        
+    </script>
+</body>
+</html>

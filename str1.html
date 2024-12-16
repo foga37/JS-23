@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TASK 9</title>
+    <style>
+        .a {
+            color: red;
+        }
+        .b {
+            color: blueviolet;
+        }
+        .q {
+            color: chartreuse;
+        }
+        .w {
+            color: green;
+        }
+        .e {
+            font-weight: 600;
+        }
+        
+    </style>
+</head>
+<body>
+    <div id="aa" class="a">aa</div>
+    <div id="bb" class="b">bb</div>
+    <div id="qq" class="q">qq</div>
+    
+    <script>
+        console.log('9. Зміна класів: Створіть сторінку з елементами, які мають CSS-класи. За допомогою JavaScript, змініть класи цих елементів без використання подій.');
+        const aa = document.getElementById('aa');
+        const bb = document.getElementById('bb');
+        const qq = document.getElementById('qq');
+        aa.classList.toggle('a');
+        aa.classList.toggle('w');
+        bb.classList.toggle('b');
+        bb.classList.toggle('e');
+        qq.classList.toggle('q');
+        qq.classList.toggle('b');
+        console.log(aa, bb, qq);
+        
+    </script>
+
+    <!-- <script src="./js23.js"></script> -->
+</body>
+</html>
